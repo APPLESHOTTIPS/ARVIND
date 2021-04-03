@@ -1,0 +1,62 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating animation by using javascript</title>
+    <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            position: relative;
+            background: rgb(131, 131, 120);
+        }
+        
+        #animation {
+            padding-left: 0px;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            background-color: brown;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+    <h1 onclick="this.innerHTML= 'oops'">HII</h1>
+
+
+    <button onclick="myMOve()">click me</button>
+    <div id="container">
+        <div id="animation"></div>
+    </div>
+
+</body>x
+<script>
+    var id = null;
+
+    function myMOve() {
+        var elem = document.getElementById("animation");
+        var pos = 3;
+        clearInterval(id);
+        id = setInterval(frame, 5);
+
+        function frame() {
+            if (pos == 380) {
+                clearInterval(id);
+            } else {
+                pos++;
+                elem.style.top = pos + "px";
+                elem.style.right = pos + "px";
+            }
+        }
+    }
+</script>
+
+</html>

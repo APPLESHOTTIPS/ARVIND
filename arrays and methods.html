@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> arrays and methods</title>
+</head>
+
+<body>
+    <p id="hi"> hello arrays</p>
+    <script>
+        var arrays = ['first', 'second', 'third', 'fourth'];
+        /arrays[0] = 'hello'/
+
+        document.getElementById('hi').innerHTML = arrays;
+        console.log(arrays[2])
+        console.log(typeof arrays);
+        document.getElementById.innerHTML = arrays.toString;
+        for (var i = 0; i < arrays.length; i++) {
+            console.log(arrays[i]);
+
+            alert(arrays.length);
+        }
+        button onclick = "myFunction()" > Try it < /button>
+
+        console.log(arrays.slice(0, 3));
+        console.log(arrays.length); // leanth
+        console.log(arrays.push('arvind', "chowdary", "a")); // push
+        console.log(arrays.pop()); // delete last element 
+        console.log(arrays.shift()); //  deleting first element 
+        console.log(arrays.unshift(" arvindd")); // adding fist element 
+        console.log(arrays.join('*')); // seprated by *
+        arrays[0] = ' hi';
+        console.log(arrays);
+
+
+        var arr = ["a", "b", "c", "d", "e"];
+        var all = arrays.concat(arr); // combining arrays
+        console.log(all);
+        console.log(all.slice(1, 4));
+        console.log(all.reverse());
+        console.log(all.sort());
+
+
+
+        // for using loops 
+        let emptyArray = new Array();
+        for (let num = 0; num <= 10; num++) {
+            emptyArray.push(num);
+            console.log(emptyArray.length);
+            console.log(emptyArray);
+
+        }
+    </script>
+
+</body>
+
+</html>
